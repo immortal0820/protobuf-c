@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message CloudServer {
+	required string id = 1;
+	required string ip = 2;
+}
+
+message AddStreamerRequest {
+	required string username = 1;
+	required string password = 2;
+	required CloudServer server = 3;
+}
